@@ -1,0 +1,54 @@
+<style>
+:root { --ink:#142238; --muted:#64748b; --blue:#2856a6; --border:#e3e8f0; }
+.block-container { max-width: 1450px; padding-top: 1.35rem; padding-bottom: 2rem; }
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #111827 0%, #0b1220 100%);
+    border-right: 1px solid #263244;
+}
+
+/* Sidebar typography: keep navigation and labels readable on the dark panel. */
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"],
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] label p,
+[data-testid="stSidebar"] [role="radiogroup"] label,
+[data-testid="stSidebar"] [role="radiogroup"] label p,
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
+    color: #e5e7eb !important;
+}
+
+/* Radio navigation options and hover state. */
+[data-testid="stSidebar"] [role="radiogroup"] label {
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+[data-testid="stSidebar"] [role="radiogroup"] label:hover {
+    background: #1f2937;
+}
+
+/* Sidebar text inputs and dropdowns. */
+[data-testid="stSidebar"] input,
+[data-testid="stSidebar"] [data-baseweb="select"] > div {
+    background-color: #111827 !important;
+    color: #f9fafb !important;
+    border-color: #374151 !important;
+    border-radius: 8px;
+}
+[data-testid="stSidebar"] input::placeholder {
+    color: #9ca3af !important;
+}
+[data-testid="stSidebar"] [data-baseweb="select"] div,
+[data-testid="stSidebar"] [data-baseweb="select"] span {
+    color: #f9fafb !important;
+}
+[data-testid="stSidebar"] hr {
+    border-color: #374151;
+}
+h1,h2,h3 { color:#142238; letter-spacing:-.025em; }
+[data-testid="stMetric"] { background:#fff; border:1px solid #e3e8f0; padding:16px 18px; border-radius:12px; box-shadow:0 2px 8px rgba(20,34,56,.035); }
+div[data-testid="stAlert"] { border-radius:10px; }
+div.stButton > button { border-radius:9px; font-weight:600; }
+.small-muted {color:#64748b;font-size:.85rem;}
+.badge {display:inline-block;border:1px solid #d9e2ef;border-radius:999px;padding:4px 9px;font-size:.78rem;background:#f8fafc;color:#334155;}
+</style>
